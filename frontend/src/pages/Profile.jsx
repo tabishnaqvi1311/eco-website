@@ -1,4 +1,5 @@
 import { ResponsiveTimeRange } from "@nivo/calendar";
+import Pfp from "@/assets/profile-pic.png"
 
 export default function Profile() {
 
@@ -337,7 +338,7 @@ export default function Profile() {
     return (
         <main className="flex p-10">
             <div className="bg-gray-100 p-10 rounded-xl text-center flex flex-col justify-center items-center w-1/4">
-                {/* <img src="" alt="" /> */}
+                <img className="blend-color" src={Pfp} alt="" />
                 <h1 className="font-bold text-2xl">Profile Details</h1>
                 <p>Username: {localStorage.getItem("email").split("@")[0]}</p>
                 <p>Email: {localStorage.getItem("email")}</p>

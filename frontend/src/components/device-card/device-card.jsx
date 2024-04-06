@@ -1,17 +1,19 @@
 export default function DeviceCard({
-    name,
+    name,img
 
 }) {
     return (
-        <div className="h-56 border w-56 rounded-3xl border-gray-500 flex items-end gap-5 justify-end p-5">
-            {/* put images here  */}
-            <label className="switch">
-                <input type="checkbox" className="okInput"/>
-                    <span className="slider">
-                        <svg className="slider-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg>
-                    </span>
-            </label>
-            <p className="font-medium text-lg">{name}</p>
+        <div className="device-card border border-gray-500 p-5">
+            <img src={img} />
+            <div className="flex items-end gap-5 justify-between">
+                <p className="font-medium text-lg">{name}</p>
+                <label className="switch">
+                    <input type="checkbox" className="okInput"/>
+                        <span className="slider">
+                            <svg className="slider-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg>
+                        </span>
+                </label>
+            </div>
         </div>
     )
 }

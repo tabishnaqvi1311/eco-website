@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import { useEffect, useState } from "react";
+import Logo from "@/assets/logo.png";
+import Pfp from "@/assets/profile-pic.png"
 
 export default function Navbar() {
 
@@ -19,7 +21,10 @@ export default function Navbar() {
 
     return (
         <header className="flex justify-around items-center py-5 border-b ">
-            <Link to={"/"} className="text-2xl font-bold">nameless</Link>
+            <div className="flex column items-center">
+                <img src={Logo}/>
+                <Link to={"/"} className="text-2xl font-bold">ECO APP</Link>
+            </div>
             {isAuth &&
                 <nav className="flex gap-10">
                     <Link to={"/dashboard"} className="hover:underline">Home</Link>
@@ -43,6 +48,7 @@ export default function Navbar() {
                             </Button>
                         </>
                 }
+                <img className="w-20" src={Pfp} alt="" />
             </div>
         </header>
     )
