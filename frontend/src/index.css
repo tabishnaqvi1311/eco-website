@@ -160,3 +160,121 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
+
+.reward-redeem button:hover {
+  background-color: #524f4f;
+}
+
+.home {
+  height: 90vh;
+  width: 100%;
+}
+
+.home-text {
+  padding: 4rem;
+}
+
+.home h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.home p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #696969;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.home-img {
+  width: 100%;
+  height: auto;
+}
+
+.home img {
+  width: 100%;
+  height: auto;
+}
+
+.steps {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.steps h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.steps p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #696969;
+  margin-bottom: 2rem;
+}
+
+.step-container {
+  width: 100%;
+  padding: 1rem 4rem;
+}
+
+.step {
+  border: #181818 1px solid;
+  border-radius: 50px;
+  padding: 1rem;
+  margin: 1rem 2rem;
+  width: 20%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgb(44, 41, 41);
+}
+
+.step h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.Devices {
+  margin: 8rem 4rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  border: #181818 1px solid;
+  border-radius: 30px;
+  background-color: rgb(233, 233, 233);
+}
+
+.Devices h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.Devices p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #696969;
+  margin-bottom: 2rem;
+}
+
+.Device-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  mix-blend-mode: multiply;
+  width: 100%;
+  padding: 1rem;
+}
+
+.Device h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
