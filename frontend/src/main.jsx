@@ -8,19 +8,20 @@ import Settings from './pages/Settings.jsx'
 import Register from './pages/Register.jsx'
 import Login from './pages/Login.jsx'
 import Dashboard from './pages/Dashboard.jsx'
-import Redeem from './pages/Redeem.jsx'
+// import Redeem from './pages/Redeem.jsx'
 import Profile from './pages/Profile.jsx'
+import ErrorPage from './pages/ErrorPage.jsx'
 
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<App />}>
+    <Route path='/' element={<App />} errorElement={<ErrorPage/>}>
       <Route index path='/' element={<Home/>}/>
       <Route path='register' element={<Register/>}/>
       <Route path='login' element={<Login/>}/>
       <Route path='dashboard' element={<Dashboard/>}/>
-      <Route path='redeem' element={<Redeem/>}/>
+      {/* <Route path='redeem' element={<Redeem/>}/> */}
       <Route path='profile' element={<Profile/>}/>
       <Route path='settings' element={<Settings/>}/>
     </Route>

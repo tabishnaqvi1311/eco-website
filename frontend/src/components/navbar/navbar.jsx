@@ -28,7 +28,7 @@ export default function Navbar() {
             {isAuth &&
                 <nav className="flex gap-10">
                     <Link to={"/dashboard"} className="hover:underline">Home</Link>
-                    <Link to={"/redeem"} className="hover:underline">Redeem</Link>
+                    {/* <Link to={"/redeem"} className="hover:underline">Redeem</Link> */}
                     <Link to={"/profile"} className="hover:underline">Profile</Link>
                 </nav>
             }
