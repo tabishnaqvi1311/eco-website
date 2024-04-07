@@ -7,6 +7,7 @@ import Lamp from '@/assets/landing/lamp.png';
 import Phone from '@/assets/landing/phone.png';
 import TV from '@/assets/landing/tv.png';
 import Landing from '@/assets/landing/landing.png';
+import PricingCard from '@/components/pricing-card/PricingCard';
 
 export default function Home() {
     return (
@@ -63,6 +64,43 @@ export default function Home() {
                         <h2>Smartphone</h2>
                     </div>
                 </div>
+            </div>
+            <div className='flex items-center justify-center'>
+                <PricingCard
+                    price={"0"}
+                    title={"Basic"}
+                    info={"Perfect for beginners on the journey to reduce carbon footprint"}
+                    features={[
+                        "Upto 4 Devices",
+                        "Usage Statistics",
+                        "Reap Rewards"
+                    ]}
+                />
+                <PricingCard
+                    price={"10"}
+                    title={"Professional"}
+                    info={"Avail Exclusive Benifits"}
+                    features={[
+                        "More than 4 devices",
+                        "Advanced Usage Statistics",
+                        "Unlock more rewards",
+                        "All features of Basic"
+                    ]}
+                />
+                <PricingCard
+                    price={"???"}
+                    title={"Enterprise"}
+                    info={"For Large Scale Enterprises"}
+                    features={[
+                        "Calculate Carbon Footprint on a Large Scale",
+                        "Mutliple User Support",
+                        "All features of Professional"
+                    ]}
+                />
+            </div>
+
+            <div className='py-10 flex items-center justify-center'>
+                    EcoApp @ 2024 Designed and Developed by Team Endpoint
             </div>
         </main>
     )
