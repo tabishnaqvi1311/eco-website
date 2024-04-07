@@ -1,0 +1,399 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.formInput {
+  @apply border py-1 px-3 rounded-lg focus:outline-none focus:bg-gray-100
+}
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch .okInput {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #B0B0B0;
+  border: 1px solid #B0B0B0;
+  transition: .4s;
+  border-radius: 32px;
+  outline: none;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  outline: 2px solid #B0B0B0;
+  left: -1px;
+  bottom: -1px;
+  background-color: #fff;
+  transition: transform .25s ease-in-out 0s;
+}
+
+.slider-icon {
+  opacity: 0;
+  height: 12px;
+  width: 12px;
+  stroke-width: 8;
+  position: absolute;
+  z-index: 999;
+  stroke: #222222;
+  right: 60%;
+  top: 30%;
+  transition: right ease-in-out .3s, opacity ease-in-out .15s;
+}
+
+.okInput:checked+.slider {
+  background-color: #222222;
+}
+
+.okInput:checked+.slider .slider-icon {
+  opacity: 1;
+  right: 20%;
+}
+
+.okInput:checked+.slider:before {
+  transform: translateX(1.5em);
+  outline-color: #181818;
+}
+
+.home-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-img img {
+  width: 100%;
+  height: auto;
+}
+
+.device-card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+  width: 100%;
+  padding: 2rem 1rem;
+  border-radius: 50px;
+}
+
+.reward-card {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  height: 180px;
+  padding: 1rem;
+  border-radius: 50px;
+  border: #181818 1px solid;
+}
+
+.reward-desc h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.reward-desc p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #14939c;
+}
+
+.reward-img {
+  min-width: 10%;
+  height: 100%;
+}
+
+.reward-img img {
+  height: 100%;
+  width: auto;
+}
+
+.reward-desc {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reward-redeem {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  margin: 0 3%;
+}
+
+.reward-redeem button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 14px;
+  background-color: #181818;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.reward-redeem button:hover {
+  background-color: #524f4f;
+}
+
+.home {
+  height: 90vh;
+  width: 100%;
+}
+
+.home-text {
+  padding: 4rem;
+}
+
+.home h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.home p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #696969;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.home-img {
+  width: 100%;
+  height: auto;
+}
+
+.home img {
+  width: 100%;
+  height: auto;
+}
+
+.steps {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.steps h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.steps p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #696969;
+  margin-bottom: 2rem;
+}
+
+.step-container {
+  width: 100%;
+  padding: 1rem 4rem;
+}
+
+.step {
+  border: #181818 1px solid;
+  border-radius: 50px;
+  padding: 1rem;
+  margin: 1rem 2rem;
+  width: 20%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgb(44, 41, 41);
+}
+
+.step h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.Devices {
+  margin: 8rem 4rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  border: #181818 1px solid;
+  border-radius: 30px;
+  background-color: rgb(233, 233, 233);
+}
+
+.Devices h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.Devices p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #696969;
+  margin-bottom: 2rem;
+}
+
+.Device-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  mix-blend-mode: multiply;
+  width: 100%;
+  padding: 1rem;
+}
+
+.Device h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* pricing card style  */
+
+.plan {
+  border-radius: 16px;
+  box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+  padding: 10px;
+  background-color: #fff;
+  color: #fff;
+  max-width: 300px;
+}
+
+.plan strong {
+  font-weight: 600;
+  color: #fff;
+}
+
+.plan .inner {
+  align-items: center;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: #2c2929;
+  border-radius: 12px;
+  position: relative;
+}
+
+.plan .pricing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  border-radius: 99em 0 0 99em;
+  display: flex;
+  align-items: center;
+  padding: 0.625em 0.75em;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c2929;
+}
+
+.plan .pricing small {
+  color: #707a91;
+  font-size: 0.75em;
+  margin-left: 0.25em;
+}
+
+.plan .title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: rgb(40, 171, 40);
+}
+
+.plan .title + * {
+  margin-top: 0.75rem;
+}
+
+.plan .info + * {
+  margin-top: 1rem;
+}
+
+.plan .features {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan .features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.plan .features li + * {
+  margin-top: 0.75rem;
+}
+
+.plan .features .icon {
+  background-color: rgb(40, 171, 40);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.plan .features .icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.plan .features + * {
+  margin-top: 1.25rem;
+}
+
+.plan .action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.plan .button {
+  background-color: #fff;
+  border-radius: 6px;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 0.625em 0.75em;
+  text-decoration: none;
+}
+
+.plan .button:hover, .plan .button:focus {
+  background-color: #efefef;
+}
