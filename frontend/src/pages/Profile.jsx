@@ -1,5 +1,6 @@
 import { ResponsiveTimeRange } from "@nivo/calendar";
 import Pfp from "@/assets/profile-pic.png"
+import ReactSpeedometer from "react-d3-speedometer";
 
 export default function Profile() {
 
@@ -369,6 +370,7 @@ export default function Profile() {
                         }
                     ]} />
             </div>
+            <ReactSpeedometer value={567}/>
         </main>
     )
 }
