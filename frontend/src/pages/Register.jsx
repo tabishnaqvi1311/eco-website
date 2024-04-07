@@ -17,7 +17,7 @@ export default function Register() {
     const handleRegister = async (e) => {
         e.preventDefault()
         try {
-            const response = await fetch(`http://localhost:8181/api/auth/register`, {
+            const response = await fetch(`https://eco-backend-production-8c5d.up.railway.app/api/auth/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
