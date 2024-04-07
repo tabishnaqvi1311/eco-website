@@ -8,6 +8,7 @@ import Phone from '@/assets/landing/phone.png';
 import TV from '@/assets/landing/tv.png';
 import Landing from '@/assets/landing/landing.png';
 import PricingCard from '@/components/pricing-card/PricingCard';
+import qrCode from "@/assets/qrcode.png";
 
 export default function Home() {
     return (
@@ -99,8 +100,12 @@ export default function Home() {
                 />
             </div>
 
-            <div className='py-10 flex items-center justify-center'>
-                    EcoApp @ 2024 Designed and Developed by Team Endpoint
+            <div className='py-10 flex items-center justify-around'>
+                <span>EcoApp @ 2024 Designed and Developed by Team Endpoint</span>
+                <div className='flex flex-col items-center'>
+                    <img src={qrCode} alt="" width={250} height={250} />
+                    <h1 className='text-green-700 font-bold text-2xl'>Download the App</h1>
+                </div>
             </div>
         </main>
     )
