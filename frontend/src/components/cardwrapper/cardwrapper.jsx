@@ -21,7 +21,7 @@ export default function CardWrapper({
                     <h1 className={
                         cn("text-3xl font-bold")
                     }>
-                        nameless
+                        ECO APP
                     </h1>
                     <p className="text-muted-foreground text-base">
                         {headerLabel}
